@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, 'Andale Mono', 'Lucida Console', 'DejaVu Sans Mono', monospace;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+}
+
+    .main-nav li:not(:first-child) {
+        margin-left: 10px;
+    }
+
+    .main-nav li a {
+        text-decoration: none;
+        padding: 20px;
+        display: block;
+        color: #ff0000;
+    }
+
+        .main-nav li a:hover {
+            text-decoration: underline;
+        }
+
+.wrapper {
+    flex: 1 0 auto;
+}
+
+.container {
+    width: 900px;
+}
+
+.container-header h1 {
+    font-size: 16px;
+    text-align: right;
+    font-weight: bold;
+    color: #b76927;
+}
+
+.container-about-myself p {
+    padding: 1.2em 0;
+    font-size: 0.9em;
+    text-align: justify;
+    color: #e0be5a;
+}
+
+    .container-about-myself p noscript {
+        color: #e0be5a;
+    }
+
+.footer {
+    flex-shrink: 0;
+}
+
+    .footer p {
+        font-size: 16px;
+        text-align: right;
+        font-weight: normal;
+        color: #91c456;
+    }
+
+        .footer p noscript {
+            color: #91c456;
+        }
